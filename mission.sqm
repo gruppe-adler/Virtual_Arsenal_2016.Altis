@@ -26,7 +26,6 @@ binarizationWanted=0;
 addons[]=
 {
 	"A3_Ui_F",
-	"COREVLiteLoadouts",
 	"A3_Structures_F_Mil_BagFence",
 	"A3_Weapons_F_Ammoboxes",
 	"ace_dragging",
@@ -48,8 +47,6 @@ addons[]=
 	"ace_smallarms",
 	"rhsusf_c_weapons",
 	"ace_optics",
-	"COREVLiteItems",
-	"COREVWeaponsEXTAF",
 	"task_force_radio_items",
 	"ARC_Units",
 	"ace_medical",
