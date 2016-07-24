@@ -1,6 +1,6 @@
 OnLoadMission = "Virtual Arsenal";
 author="XiviD für Gruppe Adler";  //appears as author in overview and loading screen
-overviewText="Equip dat shit!"; //appears in overview and loading screen
+overviewText="Zum Ausrüsten und Herumprobieren!"; //appears in overview and loading screen
 onLoadName="Virtual Arsenal"; //mission name for loading screen only
 disabledAI = 1;
 overviewPicture="intro.jpg";
