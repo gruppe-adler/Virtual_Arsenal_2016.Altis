@@ -8,7 +8,7 @@ class EditorData
 	toggles=521;
 	class ItemIDProvider
 	{
-		nextID=761;
+		nextID=815;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={11729.691,36.445084,11913.646};
-		dir[]={0.75766373,-0.3204042,-0.56879157};
-		up[]={0.25626153,0.94724619,-0.19237775};
-		aside[]={-0.60043627,-2.8235081e-007,-0.79980683};
+		pos[]={20099.857,25.949724,20017.133};
+		dir[]={-0.3702848,-0.36711875,0.85331982};
+		up[]={-0.14614296,0.93017089,0.33678493};
+		aside[]={0.91737276,1.6757986e-007,0.39808184};
 	};
 };
 binarizationWanted=0;
@@ -39,21 +39,21 @@ addons[]=
 	"A3_Structures_F_System",
 	"CUP_Misc3_Config",
 	"A3_Characters_F",
-	"A3_Weapons_F_Exp_Rifles_SPAR_01",
-	"cba_jr",
-	"ace_realisticnames",
+	"rhsusf_c_weapons",
 	"A3_Weapons_F_Exp",
 	"A3_Weapons_F_Acc",
 	"ace_laserpointer",
 	"A3_Weapons_F",
-	"ace_smallarms",
-	"rhsusf_c_weapons",
 	"ace_optics",
 	"task_force_radio_items",
 	"ARC_Units",
 	"ace_medical",
+	"ace_realisticnames",
 	"ace_attach",
 	"ace_hearing",
+	"A3_Weapons_F_Exp_Rifles_SPAR_01",
+	"cba_jr",
+	"ace_smallarms",
 	"A3_Modules_F_Curator_Curator",
 	"ga_heli",
 	"ace_advanced_ballistics",
@@ -77,7 +77,6 @@ addons[]=
 	"A3_Structures_F_Mil_Cargo",
 	"CUP_CAMisc",
 	"ace_logistics_wirecutter",
-	"A3_Structures_F_Mil_Flags",
 	"ace_respawn",
 	"A3_Misc_F_Helpers",
 	"ace_finger",
@@ -89,13 +88,17 @@ addons[]=
 	"CUP_AirVehicles_MV22",
 	"CUP_Wheeled_SUV",
 	"CUP_WheeledVehicles_Dingo",
-	"rhsusf_c_markvsoc"
+	"rhsusf_c_markvsoc",
+	"A3_Boat_F_Exp_Scooter_Transport_01",
+	"A3_Boat_F_Boat_Transport_01",
+	"A3_Boat_F_Exp_Boat_Transport_02",
+	"A3_Soft_F_Quadbike_01"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=54;
+		items=57;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -176,17 +179,17 @@ class AddonsMetaData
 		};
 		class Item12
 		{
+			className="rhsusf_c_weapons";
+			name="RHSUSF Weapons & Accessories";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+		class Item13
+		{
 			className="A3_Weapons_F_Exp";
 			name="Arma 3 Apex - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
-		};
-		class Item13
-		{
-			className="cba_jr";
-			name="Community Base Addons - Joint Rails";
-			author="CBA Team";
-			url="https://www.github.com/CBATeam/CBA_A3";
 		};
 		class Item14
 		{
@@ -197,53 +200,55 @@ class AddonsMetaData
 		};
 		class Item15
 		{
-			className="ace_smallarms";
-			name="ACE3 - Small Arms";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item16
-		{
-			className="rhsusf_c_weapons";
-			name="RHSUSF Weapons & Accessories";
-			author="Red Hammer Studios";
-			url="http://www.rhsmods.org/";
-		};
-		class Item17
-		{
 			className="ace_optics";
 			name="ACE3 - Optics";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item18
+		class Item16
 		{
 			className="task_force_radio_items";
 			name="task_force_radio_items";
+			author="[TF]Nkey";
+			url="https://github.com/michail-nikolaev/task-force-arma-3-radio";
 		};
-		class Item19
+		class Item17
 		{
 			className="ARC_Units";
 			name="ARC_Units";
 		};
-		class Item20
+		class Item18
 		{
 			className="ace_medical";
 			name="ACE3 - Medical";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item21
+		class Item19
 		{
 			className="ace_attach";
 			name="ACE3 - Attach";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item22
+		class Item20
 		{
 			className="ace_hearing";
 			name="ACE3 - Hearing";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item21
+		{
+			className="cba_jr";
+			name="Community Base Addons - Joint Rails";
+			author="CBA Team";
+			url="https://www.github.com/CBATeam/CBA_A3";
+		};
+		class Item22
+		{
+			className="ace_smallarms";
+			name="ACE3 - Small Arms";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
@@ -433,6 +438,27 @@ class AddonsMetaData
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
+		class Item54
+		{
+			className="A3_Boat_F_Exp";
+			name="Arma 3 Apex - Boats and Submersibles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item55
+		{
+			className="A3_Boat_F";
+			name="Arma 3 Alpha - Boats and Submersibles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item56
+		{
+			className="A3_Soft_F";
+			name="Arma 3 Alpha - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
 	};
 };
 randomSeed=3122125;
@@ -489,6 +515,101 @@ class CustomAttributes
 		};
 		class Attribute1
 		{
+			property="ReviveRequiredTrait";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		class Attribute2
+		{
+			property="ReviveMode";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		class Attribute3
+		{
+			property="ReviveRequiredItemsFakConsumed";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"BOOL"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute4
+		{
+			property="SharedObjectives";
+			expression="if (isMultiplayer) then {[_value] spawn bis_fnc_sharedObjectives;};";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		class Attribute5
+		{
+			property="ReviveMedicSpeedMultiplier";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=2;
+				};
+			};
+		};
+		class Attribute6
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -506,7 +627,102 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=2;
+		class Attribute7
+		{
+			property="ReviveForceRespawnDelay";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=3;
+				};
+			};
+		};
+		class Attribute8
+		{
+			property="ReviveBleedOutDelay";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=20;
+				};
+			};
+		};
+		class Attribute9
+		{
+			property="ReviveDelay";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=6;
+				};
+			};
+		};
+		class Attribute10
+		{
+			property="ReviveUnconsciousStateMode";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		class Attribute11
+		{
+			property="ReviveRequiredItems";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		nAttributes=12;
 	};
 	class Category1
 	{
@@ -537,6 +753,7 @@ class Mission
 {
 	class Intel
 	{
+		overviewText="Virtual Arsenal zum Ausrüsten und  Waffen testen.";
 		startWeather=0.42999998;
 		startWind=0.099999994;
 		startWaves=0.099999994;
@@ -554,7 +771,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=329;
+		items=359;
 		class Item0
 		{
 			dataType="Marker";
@@ -2786,19 +3003,41 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11635.554,27.024231,11861.455};
-				angles[]={6.2712574,0.61471885,0.0018034813};
+				position[]={11635.554,27.024349,11861.455};
+				angles[]={6.2712646,0.61472243,0.0017976891};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				description="Zeus #2";
 			};
 			id=135;
 			type="FlagCarrierGermany_EP1";
-			atlOffset=-0.0041179657;
+			atlOffset=-0.0039997101;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item122
 		{
@@ -3342,7 +3581,7 @@ class Mission
 			};
 			id=164;
 			type="Land_arrows_desk_L";
-			atlOffset=0.037740707;
+			atlOffset=0.037742615;
 		};
 		class Item151
 		{
@@ -3374,14 +3613,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={11726.929,22.98118,11871.769};
-						angles[]={6.2778587,2.1054325,0.0053265258};
+						angles[]={6.2778621,2.1054256,0.0053232545};
 					};
 					side="West";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						name="int1";
 						description="Zeus #1";
 						isPlayer=1;
@@ -3390,12 +3629,12 @@ class Mission
 						{
 							class primaryWeapon
 							{
-								name="arifle_SPAR_01_blk_F";
+								name="rhs_weap_hk416d145";
 								optics="optic_ERCO_blk_F";
 								flashlight="acc_pointer_IR";
 								class primaryMuzzleMag
 								{
-									name="30Rnd_556x45_Stanag_Tracer_Red";
+									name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
 									ammoLeft=30;
 								};
 							};
@@ -3418,11 +3657,17 @@ class Mission
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=1;
+									items=2;
 									class Item0
 									{
-										name="30Rnd_556x45_Stanag_Tracer_Green";
-										count=4;
+										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
+										count=3;
+										ammoLeft=30;
+									};
+									class Item1
+									{
+										name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
+										count=1;
 										ammoLeft=30;
 									};
 								};
@@ -3447,7 +3692,7 @@ class Mission
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=6;
+									items=8;
 									class Item0
 									{
 										name="SmokeShell";
@@ -3480,9 +3725,21 @@ class Mission
 									};
 									class Item5
 									{
-										name="30Rnd_556x45_Stanag_Tracer_Red";
-										count=2;
+										name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
+										count=7;
 										ammoLeft=30;
+									};
+									class Item6
+									{
+										name="rhs_mag_an_m14_th3";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item7
+									{
+										name="rhsusf_mag_17Rnd_9x19_JHP";
+										count=1;
+										ammoLeft=17;
 									};
 								};
 								class ItemCargo
@@ -3520,25 +3777,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="ace_isHandcuffed";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
@@ -3556,7 +3794,45 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 			};
@@ -3586,7 +3862,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						name="int3";
 						description="Zeus #3";
 						isPlayable=1;
@@ -3790,7 +4066,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						isPlayable=1;
 						class Inventory
 						{
@@ -3984,7 +4260,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11722.932,22.924461,11865.13};
+						position[]={11722.932,22.924463,11865.13};
 						angles[]={6.2778587,2.1054325,0.0053265258};
 					};
 					side="West";
@@ -3992,7 +4268,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						isPlayable=1;
 						class Inventory
 						{
@@ -4123,7 +4399,7 @@ class Mission
 					};
 					id=173;
 					type="B_Soldier_F";
-					atlOffset=0.00028610229;
+					atlOffset=0.00028800964;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4172,7 +4448,7 @@ class Mission
 			{
 			};
 			id=172;
-			atlOffset=0.00028610229;
+			atlOffset=0.00028800964;
 		};
 		class Item156
 		{
@@ -4194,7 +4470,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						isPlayable=1;
 						class Inventory
 						{
@@ -4396,7 +4672,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						isPlayable=1;
 						class Inventory
 						{
@@ -4598,7 +4874,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						isPlayable=1;
 						class Inventory
 						{
@@ -4800,7 +5076,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						isPlayable=1;
 						class Inventory
 						{
@@ -5002,7 +5278,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						isPlayable=1;
 						class Inventory
 						{
@@ -5196,7 +5472,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11718.254,22.862656,11852.574};
+						position[]={11718.254,22.862654,11852.574};
 						angles[]={6.2805333,2.1054325,0.0013372133};
 					};
 					side="West";
@@ -5204,7 +5480,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						isPlayable=1;
 						class Inventory
 						{
@@ -5335,7 +5611,7 @@ class Mission
 					};
 					id=185;
 					type="B_Soldier_F";
-					atlOffset=0.00014305115;
+					atlOffset=0.0001449585;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5384,7 +5660,7 @@ class Mission
 			{
 			};
 			id=184;
-			atlOffset=0.00014305115;
+			atlOffset=0.0001449585;
 		};
 		class Item162
 		{
@@ -5406,7 +5682,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						isPlayable=1;
 						class Inventory
 						{
@@ -5608,7 +5884,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						isPlayable=1;
 						class Inventory
 						{
@@ -5802,7 +6078,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11722.688,22.901262,11859.763};
+						position[]={11722.688,22.90126,11859.763};
 						angles[]={6.2791886,2.1054325,0.0039967569};
 					};
 					side="West";
@@ -5810,7 +6086,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						isPlayable=1;
 						class Inventory
 						{
@@ -5941,7 +6217,7 @@ class Mission
 					};
 					id=191;
 					type="B_Soldier_F";
-					atlOffset=0.00020980835;
+					atlOffset=0.0002117157;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5990,7 +6266,7 @@ class Mission
 			{
 			};
 			id=190;
-			atlOffset=0.00020980835;
+			atlOffset=0.0002117157;
 		};
 		class Item165
 		{
@@ -6012,7 +6288,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						isPlayable=1;
 						class Inventory
 						{
@@ -6206,7 +6482,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11725.272,22.930155,11863.856};
+						position[]={11725.272,22.930151,11863.856};
 						angles[]={6.2778587,2.1054325,0.0053265258};
 					};
 					side="West";
@@ -6214,7 +6490,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						isPlayable=1;
 						class Inventory
 						{
@@ -6345,7 +6621,7 @@ class Mission
 					};
 					id=195;
 					type="B_Soldier_F";
-					atlOffset=0.00028610229;
+					atlOffset=0.00028991699;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -6394,7 +6670,7 @@ class Mission
 			{
 			};
 			id=194;
-			atlOffset=0.00028610229;
+			atlOffset=0.00028991699;
 		};
 		class Item167
 		{
@@ -6408,7 +6684,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11726.66,22.946758,11865.582};
+						position[]={11726.66,22.94676,11865.582};
 						angles[]={6.2778587,2.1054325,0.0053265258};
 					};
 					side="West";
@@ -6416,7 +6692,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						isPlayable=1;
 						class Inventory
 						{
@@ -6618,7 +6894,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						isPlayable=1;
 						class Inventory
 						{
@@ -6820,7 +7096,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						name="int2";
 						description="Zeus #2";
 						isPlayable=1;
@@ -8837,7 +9113,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11612.284,24.540613,11896.457};
+				position[]={11612.283,24.542362,11896.457};
 				angles[]={0.013332055,0.52340311,0.0079935296};
 			};
 			side="Empty";
@@ -8847,7 +9123,7 @@ class Mission
 			};
 			id=304;
 			type="Fennek_Flecktarn";
-			atlOffset=-0.21037674;
+			atlOffset=-0.20862007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -8997,7 +9273,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11616.557,25.198269,11903.977};
+				position[]={11616.545,25.198816,11903.982};
 				angles[]={0.0053265258,0.52319866,0.0026520467};
 			};
 			side="Empty";
@@ -9007,7 +9283,7 @@ class Mission
 			};
 			id=368;
 			type="Fennek_Flecktarn_gmg";
-			atlOffset=-0.13105011;
+			atlOffset=-0.13044167;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -9117,7 +9393,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11620.619,25.226709,11910.984};
+				position[]={11620.616,25.228039,11910.987};
 				angles[]={0.0026744273,0.52315086,0.018663859};
 			};
 			side="Empty";
@@ -9127,7 +9403,7 @@ class Mission
 			};
 			id=408;
 			type="Fennek_Flecktarn_mg";
-			atlOffset=-0.12915611;
+			atlOffset=-0.12776566;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -9397,7 +9673,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11626.771,25.345623,11926.83};
+				position[]={11626.77,25.346056,11926.828};
 				angles[]={0.013332055,3.6826448,0.0080009829};
 			};
 			side="Empty";
@@ -9407,7 +9683,7 @@ class Mission
 			};
 			id=457;
 			type="Leopard_2A6_Fleck";
-			atlOffset=-0.0030670166;
+			atlOffset=-0.0026435852;
 		};
 		class Item219
 		{
@@ -9446,7 +9722,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						isPlayable=1;
 						class Inventory
 						{
@@ -9648,7 +9924,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						isPlayable=1;
 						class Inventory
 						{
@@ -9850,7 +10126,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						isPlayable=1;
 						class Inventory
 						{
@@ -10052,7 +10328,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						isPlayable=1;
 						class Inventory
 						{
@@ -10246,7 +10522,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11715.666,22.8447,11848.09};
+						position[]={11715.666,22.844702,11848.09};
 						angles[]={6.2791886,2.1054325,0.0013372133};
 					};
 					side="West";
@@ -10254,7 +10530,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						isPlayable=1;
 						class Inventory
 						{
@@ -10385,7 +10661,7 @@ class Mission
 					};
 					id=481;
 					type="B_Soldier_F";
-					atlOffset=0.0002117157;
+					atlOffset=0.00020980835;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -10434,7 +10710,7 @@ class Mission
 			{
 			};
 			id=480;
-			atlOffset=0.0002117157;
+			atlOffset=0.00020980835;
 		};
 		class Item225
 		{
@@ -10456,7 +10732,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						isPlayable=1;
 						class Inventory
 						{
@@ -10658,7 +10934,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						isPlayable=1;
 						class Inventory
 						{
@@ -10860,7 +11136,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						isPlayable=1;
 						class Inventory
 						{
@@ -11062,7 +11338,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						isPlayable=1;
 						class Inventory
 						{
@@ -11264,7 +11540,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						isPlayable=1;
 						class Inventory
 						{
@@ -11466,7 +11742,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						isPlayable=1;
 						class Inventory
 						{
@@ -11668,7 +11944,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						isPlayable=1;
 						class Inventory
 						{
@@ -11870,7 +12146,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						isPlayable=1;
 						class Inventory
 						{
@@ -12072,7 +12348,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						isPlayable=1;
 						class Inventory
 						{
@@ -12274,7 +12550,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						isPlayable=1;
 						class Inventory
 						{
@@ -12476,7 +12752,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						isPlayable=1;
 						class Inventory
 						{
@@ -12678,7 +12954,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						isPlayable=1;
 						class Inventory
 						{
@@ -12880,7 +13156,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""ARC_GER_Flecktarn_Uniform"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""SMA_30Rnd_556x45_M855A1_IR"";};  this addVest ""ARC_GER_Flecktarn_PlateCarrier_2"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";};  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""SMA_30Rnd_556x45_M855A1_IR"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""rhsusf_mag_17Rnd_9x19_FMJ"";  this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple"";    comment ""Add weapons"";  this addWeapon ""SMA_HK416CUSTOMafgB"";  this addPrimaryWeaponItem ""FHQ_acc_ANPEQ15_black"";  this addPrimaryWeaponItem ""rhsusf_acc_ACOG_USMC"";  this addWeapon ""rhsusf_weap_glock17g4"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152"";  this linkItem ""ItemGPS"";   ";
+						init="if !(local this) exitWith {};" \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""ARC_GER_Flecktarn_Uniform""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";}; " \n "this addItemToUniform ""ACE_morphine""; " \n "for ""_i"" from 1 to 3 do {this addItemToUniform ""rhs_mag_30Rnd_556x45_Mk318_Stanag"";}; " \n "this addItemToUniform ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""; " \n "this addVest ""ARC_GER_Flecktarn_PlateCarrier_2""; " \n "this addItemToVest ""ACE_EarPlugs""; " \n "for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "this addItemToVest ""SmokeShell""; " \n "this addItemToVest ""SmokeShellGreen""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""Chemlight_green"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";}; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";}; " \n "for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_an_m14_th3"";}; " \n "this addItemToVest ""rhsusf_mag_17Rnd_9x19_JHP""; " \n "this addHeadgear ""ARC_GER_Flecktarn_Helmet_simple""; " \n " " \n "comment ""Add weapons""; " \n "this addWeapon ""rhs_weap_hk416d145""; " \n "this addPrimaryWeaponItem ""acc_pointer_IR""; " \n "this addPrimaryWeaponItem ""optic_ERCO_blk_F""; " \n "this addWeapon ""rhsusf_weap_glock17g4""; " \n "this addWeapon ""Binocular""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""tf_anprc152""; " \n "this linkItem ""ItemGPS"";";
 						isPlayable=1;
 						class Inventory
 						{
@@ -13100,7 +13376,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11733.865,23.458855,11929.751};
+				position[]={11733.865,23.458853,11929.751};
 				angles[]={0.03731497,0,6.2751918};
 			};
 			side="Empty";
@@ -13110,7 +13386,7 @@ class Mission
 			};
 			id=530;
 			type="Land_WaterBarrel_F";
-			atlOffset=7.6293945e-006;
+			atlOffset=9.5367432e-006;
 		};
 		class Item241
 		{
@@ -13150,7 +13426,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11737.125,23.596064,11923.553};
+				position[]={11737.125,23.596014,11923.556};
 				angles[]={0.017329043,2.3561945,6.2818484};
 			};
 			side="Empty";
@@ -13160,7 +13436,7 @@ class Mission
 			};
 			id=536;
 			type="CargoNet_01_barrels_F";
-			atlOffset=0.0016498566;
+			atlOffset=0.0016479492;
 		};
 		class Item244
 		{
@@ -14022,24 +14298,6 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11736.939,27.081606,11882.358};
-				angles[]={6.2805333,0,0.0026520467};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				name="loadout_fahne";
-			};
-			id=671;
-			type="Flag_Blue_F";
-			atlOffset=1.9073486e-006;
-		};
-		class Item296
-		{
-			dataType="Object";
-			class PositionInfo
-			{
 				position[]={11651.878,24.730728,11850.93};
 				angles[]={0,2.2033672,0};
 			};
@@ -14054,7 +14312,7 @@ class Mission
 			type="AmmoCrate_NoInteractive_";
 			atlOffset=1.6211739;
 		};
-		class Item297
+		class Item296
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -14106,7 +14364,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item298
+		class Item297
 		{
 			dataType="Object";
 			class PositionInfo
@@ -14146,7 +14404,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item299
+		class Item298
 		{
 			dataType="Object";
 			class PositionInfo
@@ -14223,7 +14481,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item300
+		class Item299
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -14505,7 +14763,7 @@ class Mission
 				nAttributes=14;
 			};
 		};
-		class Item301
+		class Item300
 		{
 			dataType="Object";
 			class PositionInfo
@@ -14522,7 +14780,7 @@ class Mission
 			id=701;
 			type="Land_CncWall4_F";
 		};
-		class Item302
+		class Item301
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -14575,7 +14833,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item303
+		class Item302
 		{
 			dataType="Object";
 			class PositionInfo
@@ -14591,13 +14849,13 @@ class Mission
 			type="CUP_B_LHD_WASP_USMC_Empty";
 			atlOffset=21.339712;
 		};
-		class Item304
+		class Item303
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11953.452,2.9510171,11804.864};
-				angles[]={0,2.2285492,0};
+				position[]={11953.213,2.9357419,11807.472};
+				angles[]={0,2.0526135,0};
 			};
 			side="Empty";
 			class Attributes
@@ -14605,15 +14863,15 @@ class Mission
 			};
 			id=712;
 			type="CUP_B_RHIB_USMC";
-			atlOffset=2.164726;
+			atlOffset=1.872987;
 		};
-		class Item305
+		class Item304
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11947.238,3.0338097,11795};
-				angles[]={0,2.3128767,0};
+				position[]={11943.767,3.028728,11801.256};
+				angles[]={0,2.4260821,0};
 			};
 			side="Empty";
 			class Attributes
@@ -14621,9 +14879,9 @@ class Mission
 			};
 			id=713;
 			type="CUP_I_RHIB_RACS";
-			atlOffset=1.7413931;
+			atlOffset=1.1426493;
 		};
-		class Item306
+		class Item305
 		{
 			dataType="Object";
 			class PositionInfo
@@ -14639,7 +14897,7 @@ class Mission
 			type="CUP_B_TowingTractor_USMC";
 			atlOffset=8.8408394;
 		};
-		class Item307
+		class Item306
 		{
 			dataType="Object";
 			class PositionInfo
@@ -14656,7 +14914,7 @@ class Mission
 			type="CUP_B_AAV_D_USMC";
 			atlOffset=-0.023029327;
 		};
-		class Item308
+		class Item307
 		{
 			dataType="Object";
 			class PositionInfo
@@ -14673,7 +14931,7 @@ class Mission
 			type="CUP_B_AAV_USMC";
 			atlOffset=-0.04609108;
 		};
-		class Item309
+		class Item308
 		{
 			dataType="Object";
 			class PositionInfo
@@ -14690,12 +14948,12 @@ class Mission
 			type="CUP_B_LAV25M240_D_USMC";
 			atlOffset=-0.038934708;
 		};
-		class Item310
+		class Item309
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11828.87,20.469772,11875.595};
+				position[]={11828.548,20.56105,11875.335};
 				angles[]={0.025327841,2.4984472,6.2206011};
 			};
 			side="Empty";
@@ -14705,9 +14963,9 @@ class Mission
 			};
 			id=723;
 			type="CUP_B_LAV25_HQ_D_USMC";
-			atlOffset=-0.06432724;
+			atlOffset=0.00016975403;
 		};
-		class Item311
+		class Item310
 		{
 			dataType="Object";
 			class PositionInfo
@@ -14724,7 +14982,7 @@ class Mission
 			type="CUP_B_LAV25M240_USMC";
 			atlOffset=-0.017564774;
 		};
-		class Item312
+		class Item311
 		{
 			dataType="Object";
 			class PositionInfo
@@ -14741,7 +14999,7 @@ class Mission
 			type="CUP_B_LAV25_HQ_USMC";
 			atlOffset=-0.049423218;
 		};
-		class Item313
+		class Item312
 		{
 			dataType="Object";
 			class PositionInfo
@@ -14758,13 +15016,13 @@ class Mission
 			type="CUP_B_MV22_USMC_RAMPGUN";
 			atlOffset=-0.0058498383;
 		};
-		class Item314
+		class Item313
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11774.526,23.376507,11897.84};
-				angles[]={6.2325621,3.4143567,6.2525291};
+				position[]={11767.566,23.709682,11898.988};
+				angles[]={6.253859,3.4910545,6.2312322};
 			};
 			side="Empty";
 			flags=4;
@@ -14773,14 +15031,15 @@ class Mission
 			};
 			id=727;
 			type="CUP_I_SUV_Armored_ION";
+			atlOffset=-0.011968613;
 		};
-		class Item315
+		class Item314
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11771.038,23.704508,11901.608};
-				angles[]={6.2325621,3.7452135,6.2525291};
+				position[]={11763.095,23.997429,11902.544};
+				angles[]={6.2618566,3.7452135,6.2498641};
 			};
 			side="Empty";
 			flags=4;
@@ -14789,9 +15048,9 @@ class Mission
 			};
 			id=728;
 			type="CUP_I_SUV_ION";
-			atlOffset=-1.1444092e-005;
+			atlOffset=-0.0074939728;
 		};
-		class Item316
+		class Item315
 		{
 			dataType="Object";
 			class PositionInfo
@@ -14808,7 +15067,7 @@ class Mission
 			type="CUP_B_Dingo_GL_GER_Des";
 			atlOffset=-0.0010890961;
 		};
-		class Item317
+		class Item316
 		{
 			dataType="Object";
 			class PositionInfo
@@ -14825,7 +15084,7 @@ class Mission
 			type="CUP_B_Dingo_GL_GER_Wdl";
 			atlOffset=-0.0019493103;
 		};
-		class Item318
+		class Item317
 		{
 			dataType="Object";
 			class PositionInfo
@@ -14842,7 +15101,7 @@ class Mission
 			type="CUP_B_Dingo_GER_Des";
 			atlOffset=-0.064462662;
 		};
-		class Item319
+		class Item318
 		{
 			dataType="Object";
 			class PositionInfo
@@ -14859,7 +15118,7 @@ class Mission
 			type="CUP_B_Dingo_GER_Wdl";
 			atlOffset=-0.064390182;
 		};
-		class Item320
+		class Item319
 		{
 			dataType="Object";
 			class PositionInfo
@@ -14874,7 +15133,7 @@ class Mission
 			type="CUP_B_MV22_USMC";
 			atlOffset=37.613113;
 		};
-		class Item321
+		class Item320
 		{
 			dataType="Object";
 			class PositionInfo
@@ -14889,7 +15148,7 @@ class Mission
 			type="CUP_B_MV22_USMC_RAMPGUN";
 			atlOffset=9.0009251;
 		};
-		class Item322
+		class Item321
 		{
 			dataType="Object";
 			class PositionInfo
@@ -14904,7 +15163,7 @@ class Mission
 			type="CUP_B_RHIB_USMC";
 			atlOffset=1.3255336;
 		};
-		class Item323
+		class Item322
 		{
 			dataType="Object";
 			class PositionInfo
@@ -14920,7 +15179,7 @@ class Mission
 			type="CUP_B_AAV_USMC";
 			atlOffset=22.571705;
 		};
-		class Item324
+		class Item323
 		{
 			dataType="Object";
 			class PositionInfo
@@ -14936,7 +15195,7 @@ class Mission
 			type="CUP_B_AAV_USMC";
 			atlOffset=22.590672;
 		};
-		class Item325
+		class Item324
 		{
 			dataType="Object";
 			class PositionInfo
@@ -14952,13 +15211,13 @@ class Mission
 			type="CUP_B_LAV25M240_USMC";
 			atlOffset=24.635817;
 		};
-		class Item326
+		class Item325
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11779.941,22.936859,11894.885};
-				angles[]={6.2325621,3.4843812,6.2099833};
+				position[]={11771.886,23.418736,11895.459};
+				angles[]={6.253859,3.4843812,6.2312322};
 			};
 			side="Empty";
 			flags=4;
@@ -14967,9 +15226,9 @@ class Mission
 			};
 			id=739;
 			type="CUP_C_SUV_CIV";
-			atlOffset=0.053686142;
+			atlOffset=-0.0048046112;
 		};
-		class Item327
+		class Item326
 		{
 			dataType="Object";
 			class PositionInfo
@@ -14985,7 +15244,7 @@ class Mission
 			type="FlagCarrierUSA_EP1";
 			atlOffset=8.921463;
 		};
-		class Item328
+		class Item327
 		{
 			dataType="Object";
 			class PositionInfo
@@ -15000,6 +15259,527 @@ class Mission
 			id=760;
 			type="rhsusf_mkvsoc";
 			atlOffset=5.8494768;
+		};
+		class Item328
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11931.863,1.3862085,11801.079};
+				angles[]={0,2.3229315,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=764;
+			type="C_Scooter_Transport_01_F";
+			atlOffset=0.71659446;
+		};
+		class Item329
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11929.371,1.2964189,11798.577};
+				angles[]={0,2.5049829,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=765;
+			type="C_Scooter_Transport_01_F";
+			atlOffset=0.60617501;
+		};
+		class Item330
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11925.904,1.458496,11795.806};
+				angles[]={0,2.0798972,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=766;
+			type="C_Scooter_Transport_01_F";
+			atlOffset=0.68694597;
+		};
+		class Item331
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11810.976,17.984787,11859.263};
+				angles[]={6.2671871,0,6.2591896};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=769;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=1.1444092e-005;
+		};
+		class Item332
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11815.936,18.286245,11866};
+				angles[]={6.1927657,0,0.045302324};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=770;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=-0.00024604797;
+		};
+		class Item333
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11820.658,18.149668,11871.514};
+				angles[]={0.033321146,0,6.2631865};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=771;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=-1.5258789e-005;
+		};
+		class Item334
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11827.067,17.747189,11875.788};
+				angles[]={0.025327841,0,6.1440892};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=772;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=1.9073486e-006;
+		};
+		class Item335
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11828.333,17.910553,11897.853};
+				angles[]={0.033319358,0,6.2658563};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=773;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=0.00010299683;
+		};
+		class Item336
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11822.148,17.725502,11903.813};
+				angles[]={6.2192721,0,0.02399601};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=774;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=-0.00014877319;
+		};
+		class Item337
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11811.229,18.003445,11908.664};
+				angles[]={0.063913256,0,0.095706634};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=775;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=-5.1498413e-005;
+		};
+		class Item338
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11830.924,17.607075,11884.024};
+				angles[]={6.2073312,0,6.2060056};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=776;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=-0.014003754;
+		};
+		class Item339
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11831.696,17.806114,11892.883};
+				angles[]={6.2099833,0,6.2658529};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=777;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=0.014081955;
+		};
+		class Item340
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11816.405,17.857464,11905.284};
+				angles[]={0.063912325,0,6.1598153};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=783;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=3.8146973e-006;
+		};
+		class Item341
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11830.653,17.807396,11887.612};
+				angles[]={0.017332481,0,6.1756024};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=793;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=-2.0980835e-005;
+		};
+		class Item342
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11630.568,22.784361,11947.53};
+				angles[]={6.2498641,0,6.2245865};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=795;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=4.5776367e-005;
+		};
+		class Item343
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11635.741,22.996029,11957.723};
+				angles[]={6.2605233,0,0.0053265258};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=796;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=0.0070018768;
+		};
+		class Item344
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11639.359,23.009691,11962.896};
+				angles[]={6.272521,0,6.272521};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=797;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=-0.0013637543;
+		};
+		class Item345
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11643.706,23.043386,11968.481};
+				angles[]={0.0026520467,0,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=798;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=-0.00066184998;
+		};
+		class Item346
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11649.648,23.088717,11967.822};
+				angles[]={0.0026744273,0,0.019996032};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=799;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=-6.4849854e-005;
+		};
+		class Item347
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11639.334,23.071066,11975.714};
+				angles[]={6.2791886,0,6.2658563};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=800;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=-0.0033302307;
+		};
+		class Item348
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11652.699,23.074896,11975.285};
+				angles[]={0.0066682254,0,0.0039967569};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=801;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=-0.00066947937;
+		};
+		class Item349
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11644.651,23.053862,11980.548};
+				angles[]={0,0,6.2778587};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=802;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=-0.001329422;
+		};
+		class Item350
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11649.656,23.049631,11979.479};
+				angles[]={0,0,0.0039967569};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=803;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=0.0010032654;
+		};
+		class Item351
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11643.469,23.043303,11970.823};
+				angles[]={6.2791886,3.7100983,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=804;
+			type="Land_HelipadCircle_F";
+			atlOffset=5.7220459e-006;
+		};
+		class Item352
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11632.813,22.833607,11951.728};
+				angles[]={6.2511969,0,0.035984326};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=805;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=0.01704216;
+		};
+		class Item353
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11921.673,1.2446535,11790.702};
+				angles[]={0,2.169188,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=806;
+			type="C_Rubberboat";
+			atlOffset=0.59866548;
+		};
+		class Item354
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11918.652,1.2446525,11787.133};
+				angles[]={0,2.273886,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=807;
+			type="C_Rubberboat";
+			atlOffset=0.58529657;
+		};
+		class Item355
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11961.308,1.3162899,11814.935};
+				angles[]={0,2.6053314,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=811;
+			type="I_C_Boat_Transport_02_F";
+			atlOffset=1.9574708;
+		};
+		class Item356
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11753.895,24.707315,11892.148};
+				angles[]={6.2791886,1.2409052,6.2631893};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=812;
+			type="C_Quadbike_01_F";
+			atlOffset=9.5367432e-006;
+		};
+		class Item357
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11750.697,24.751249,11894.947};
+				angles[]={6.2791886,1.2409052,6.2805333};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=813;
+			type="C_Quadbike_01_F";
+			atlOffset=0.00034332275;
+		};
+		class Item358
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11747.874,24.769823,11897.79};
+				angles[]={6.2791886,1.2409052,6.2805333};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=814;
+			type="C_Quadbike_01_F";
+			atlOffset=1.9073486e-005;
 		};
 	};
 	class Connections
