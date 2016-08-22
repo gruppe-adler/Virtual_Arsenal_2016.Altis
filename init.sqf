@@ -3,7 +3,7 @@
 [] execvm "protectzone.sqf";
 setviewdistance 4000;
 
-
+/*
 // needed for automatic mousewheel loadouts
 if (isServer) then {
 	call compile preprocessfile "SHK_pos\shk_pos_init.sqf";
@@ -23,7 +23,7 @@ if (hasInterface) then {
 		_object addaction [_name, _scriptToCall, _Args, 10, false, true, "",""];
 	};
 };
-
+*/
 
 
 
