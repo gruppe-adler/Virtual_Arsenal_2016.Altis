@@ -1,3 +1,4 @@
+sleep 1.5;
 l1 setdamage 0;
 sleep 1.5;
 l2 setdamage 0;
