@@ -1,3 +1,5 @@
+#include "node_modules\grad-customGear\saveDialog\dialog.hpp"
+
 OnLoadMission = "Virtual Arsenal";
 author="XiviD für Gruppe Adler";  //appears as author in overview and loading screen
 overviewText="Zum Ausrüsten und Herumprobieren!"; //appears in overview and loading screen
@@ -11,3 +13,15 @@ respawnDialog = 0;
 respawnOnStart = 0;
 
 enableDebugConsole = 1;
+
+class CfgFunctions {
+  #include "node_modules\grad-customGear\cfgFunctions.hpp"
+};
+
+class grad_customGear {
+  allowHelmet = 0;
+  allowGoggles = 0;
+  allowSimpleScopes = 0;
+  allowMagnifyingScopes = 0;
+  allowMarksmanScopes = 0;
+};
