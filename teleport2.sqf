@@ -1,9 +1,8 @@
 //teleport.sqf
 //To teleport player to marker tele
 
-_tele = _this select 0;
-_caller = _this select 1;
-_caller setDir 270;
-
-_caller setPos (getPos (tele2));
+player setPos (getPos (tele2));
+player setDir 270;
 hint "Willkommen in der Basis";
+
+

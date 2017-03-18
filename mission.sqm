@@ -8,7 +8,7 @@ class EditorData
 	toggles=521;
 	class ItemIDProvider
 	{
-		nextID=938;
+		nextID=944;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={11687.932,41.55629,11877.11};
-		dir[]={0.76093119,-0.51081616,-0.40035853};
-		up[]={0.45213208,0.85965449,-0.23788837};
-		aside[]={-0.46568382,1.0716612e-006,-0.88507491};
+		pos[]={20173.344,80.640976,20031.398};
+		dir[]={-0.8544476,-0.33516249,-0.39716882};
+		up[]={-0.30402571,0.94212389,-0.1413177};
+		aside[]={-0.42154559,5.2899122e-007,0.90688992};
 	};
 };
 binarizationWanted=0;
@@ -813,7 +813,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=368;
+		items=370;
 		class Item0
 		{
 			dataType="Marker";
@@ -14739,7 +14739,7 @@ class Mission
 			};
 			id=729;
 			type="CUP_B_Dingo_GL_GER_Des";
-			atlOffset=1.5258789e-005;
+			atlOffset=-0.0045852661;
 		};
 		class Item296
 		{
@@ -14756,7 +14756,7 @@ class Mission
 			};
 			id=730;
 			type="CUP_B_Dingo_GL_GER_Wdl";
-			atlOffset=-0.038742065;
+			atlOffset=-0.048946381;
 		};
 		class Item297
 		{
@@ -14773,7 +14773,7 @@ class Mission
 			};
 			id=731;
 			type="CUP_B_Dingo_GER_Des";
-			atlOffset=5.7220459e-006;
+			atlOffset=-0.0064544678;
 		};
 		class Item298
 		{
@@ -14790,7 +14790,7 @@ class Mission
 			};
 			id=732;
 			type="CUP_B_Dingo_GER_Wdl";
-			atlOffset=1.1444092e-005;
+			atlOffset=-0.0044975281;
 		};
 		class Item299
 		{
@@ -15024,7 +15024,7 @@ class Mission
 			};
 			id=777;
 			type="Land_ClutterCutter_large_F";
-			atlOffset=2.8610229e-005;
+			atlOffset=0.00010299683;
 		};
 		class Item313
 		{
@@ -15596,18 +15596,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11750.522,24.81016,11859.854};
+				position[]={11750.522,24.809944,11859.854};
 				angles[]={0,2.0623333,0};
 			};
 			side="Empty";
 			flags=1;
 			class Attributes
 			{
-				init="this addAction [""<t color='#d18d1f'>Beförderungs-Arena</t>"", ""teleport.sqf""]";
 			};
 			id=847;
 			type="Land_ConcreteWall_02_m_gate_F";
-			atlOffset=0.51821518;
+			atlOffset=0.51799965;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -16706,14 +16705,14 @@ class Mission
 		class Item361
 		{
 			dataType="Trigger";
-			position[]={11751.246,24.260271,11859.413};
+			position[]={11752.06,24.253325,11858.962};
 			angle=5.2237005;
 			class Attributes
 			{
 				condition="this && (player in thisList)";
 				onActivation="0 = [] execVM ""teleport.sqf""";
 				sizeA=1;
-				sizeB=1;
+				sizeB=2;
 				sizeC=2;
 				repeatable=1;
 				activationBy="ANYPLAYER";
@@ -16721,7 +16720,7 @@ class Mission
 			};
 			id=917;
 			type="EmptyDetectorArea10x10";
-			atlOffset=1.2499485;
+			atlOffset=1.2498703;
 		};
 		class Item362
 		{
@@ -16875,6 +16874,68 @@ class Mission
 			id=937;
 			type="CamoNet_BLUFOR_big_F";
 			atlOffset=0.0037002563;
+		};
+		class Item368
+		{
+			dataType="Trigger";
+			position[]={20093.65,19.346203,20062.916};
+			angle=1.0958573;
+			class Attributes
+			{
+				condition="this && (player in thisList)";
+				onActivation="0 = [] execVM ""teleport2.sqf""";
+				sizeA=1;
+				sizeB=2;
+				sizeC=2;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+				isRectangle=1;
+			};
+			id=942;
+			type="EmptyDetectorArea10x10";
+			atlOffset=0.98999977;
+		};
+		class Item369
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={20092.01,19.781412,20062.074};
+				angles[]={0,4.2466745,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+				init="this addAction [""<t color='#d18d1f'>Zurück zur Basis</t>"", ""teleport2.sqf""]";
+				name="tele_1";
+			};
+			id=943;
+			type="Land_ConcreteWall_02_m_gate_F";
+			atlOffset=0.27854729;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 };
